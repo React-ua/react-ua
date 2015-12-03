@@ -1,7 +1,7 @@
 {
   "name": "React-Universal-Application-Toolbox",
   "version": "0.13.1",
-  "homepage": "http://www.react-ua.com",
+  "homepage": "http://React-Universal.gitbub.io",
   "description": "A set of React components for Universal Application with Lightning-Fast Modular CSS with No Side Effects.",
   "author": "React ua Team (http://github.com/React-ua)",
   "contributors": [
@@ -97,7 +97,7 @@
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.4.1"
   },
-  "repository": "github:react-ua/react-ua",
+  "repository": "https://github.com/React-ua/react-ui.git",
   "dependencies": {
     "colors.css": "^2.3.0"
   }
