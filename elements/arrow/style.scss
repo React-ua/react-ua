@@ -1,3 +1,4 @@
+
 .root {
   width: 0;
   height: 0;
@@ -5,6 +6,7 @@
   vertical-align: middle;
   border-right: .3125em solid transparent;
   border-left: .3125em solid transparent;
+  display: inline-block;
   &.down {
     border-top: .4375em solid;
   }

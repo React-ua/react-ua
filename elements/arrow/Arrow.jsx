@@ -1,21 +1,21 @@
 import React, {PropTypes} from 'react';
-import ClassNames from 'classnames';
-import styles from './style';
+import cx from 'classnames';
+import css,{root, up, down} from './style';
 
 export default class Arrow extends React.Component {
 
   render() {
-    let classes = ClassNames('inline-block', this.props.className, styles.root,
-    {
-      [styles.up]: this.props.up,
-    [styles.down]: this.props.down
+    let classes = cx(this.props.className, root,
+      {
+        [up]: this.props.up,
+        [down]: this.props.down
+      }
+    );
+    console.log(css);
+    return (
+      <span className={classes}/>
+    );
   }
-);
-
-return (
-  <span className={classes}/>
-);
-}
 }
 
 Arrow.propTypes = {

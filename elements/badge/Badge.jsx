@@ -2,19 +2,17 @@
 import React from 'react'
 import cx from 'classnames'
 import colors from '../utils/colors'
+import styles from './style'
 
 class Badge extends React.Component {
 
   render() {
-    let classes = cx(
-      'h5',
-      'bold',
-      'px1',
-      'inline-block',
-      'rounded',
-      'white',
+    let classes = cx(styles.root,
       'bg-' + this.props.color
     )
+
+
+    console.log(classes);
 
     return (
       <span className={classes}>
