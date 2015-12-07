@@ -1,0 +1,15 @@
+.root {
+  width: 0;
+  height: 0;
+  margin-left: .1875em;
+  vertical-align: middle;
+  border-right: .3125em solid transparent;
+  border-left: .3125em solid transparent;
+  &.down {
+    border-top: .4375em solid;
+  }
+
+  &.up {
+    border-bottom: .4375em solid;
+  }
+}

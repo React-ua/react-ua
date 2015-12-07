@@ -1,29 +1,27 @@
+import React, {PropTypes} from 'react';
+import ClassNames from 'classnames';
+import styles from './style';
 
-import React from 'react'
-
-class Arrow extends React.Component {
+export default class Arrow extends React.Component {
 
   render() {
-    let styles = {
-      arrow: {
-        width: 0,
-        height: 0,
-        marginLeft: '.1875em',
-        verticalAlign: 'middle',
-        borderRight: '.3125em solid transparent',
-        borderLeft: '.3125em solid transparent'
-      }
-    }
-
-    if (!this.props.up) {
-      styles.arrow.borderTop = '.4375em solid'
-    } else if (this.props.up) {
-      styles.arrow.borderBottom = '.4375em solid'
-    }
-
-    return <span className='inline-block' style={styles.arrow} />
+    let classes = ClassNames('inline-block', this.props.className, styles.root,
+    {
+      [styles.up]: this.props.up,
+    [styles.down]: this.props.down
   }
+);
 
+return (
+  <span className={classes}/>
+);
+}
 }
 
-export default Arrow
+Arrow.propTypes = {
+  className: React.PropTypes.string
+};
+
+Arrow.defaultProps = {
+  className: ''
+};
